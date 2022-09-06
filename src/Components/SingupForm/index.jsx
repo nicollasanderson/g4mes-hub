@@ -1,5 +1,5 @@
 import Input from "../Input";
-import { FormDivContainer } from "./style";
+import { Background, FormDivContainer } from "./style";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -7,7 +7,6 @@ import Buttons from "../Buttons";
 import { useContext } from "react";
 import { UserContext } from "../../Providers/user";
 import { useHistory } from "react-router-dom";
-import { toast } from "react-toastify";
 
 const SingupForm = () => {
   const schema = yup.object().shape({
@@ -15,7 +14,7 @@ const SingupForm = () => {
       .string()
       .required("Username obrigatório")
       .min(4, "Mínimo de 4 caracteres")
-      .matches(/^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/, "Nome inválido"),
+      .max(18, "Máximo de 18 caracteres"),
     plataform: yup.string().required("Plataforma obrigatória"),
     email: yup.string().required("E-mail obrigatório").email("E-mail inválido"),
     password: yup
@@ -34,7 +33,6 @@ const SingupForm = () => {
 
   const RegisterContext = () => useContext(UserContext);
   const { handleRegister } = RegisterContext();
-  const history = useHistory();
 
   const {
     register,
@@ -45,48 +43,57 @@ const SingupForm = () => {
   const handleFormSubmit = (data) => {
     delete data.confirm_password;
     handleRegister(data);
-    toast.success("Conta criada com sucesso!");
-    history.push("/login");
   };
 
   return (
-    <FormDivContainer>
-      <form onSubmit={handleSubmit(handleFormSubmit)}>
-        <Input
-          label="Username"
-          register={register}
-          name="username"
-          error={errors.username?.message}
-        />
-        <Input
-          label="Sua plataforma favorita"
-          register={register}
-          name="plataform"
-          error={errors.plataform?.message}
-        />
-        <Input
-          label="E-mail"
-          register={register}
-          name="email"
-          error={errors.email?.message}
-        />
-        <Input
-          label="Senha"
-          register={register}
-          name="password"
-          type="password"
-          error={errors.password?.message}
-        />
-        <Input
-          label="Confirma Senha"
-          register={register}
-          name="confirm_password"
-          type="password"
-          error={errors.confirm_password?.message}
-        />
-        <Buttons type="submit">Cadastrar</Buttons>
-      </form>
-    </FormDivContainer>
+    <>
+      <Background />
+      <FormDivContainer>
+        <h1>Cadastre-se</h1>
+        <form onSubmit={handleSubmit(handleFormSubmit)}>
+          <Input
+            label="Username"
+            register={register}
+            name="username"
+            error={errors.username?.message}
+            placeholder="Seu apelido show!"
+          />
+          <Input
+            label="Sua plataforma favorita"
+            register={register}
+            name="plataform"
+            error={errors.plataform?.message}
+            placeholder="Melhor plataforma"
+          />
+          <Input
+            label="E-mail"
+            register={register}
+            name="email"
+            error={errors.email?.message}
+            placeholder="Insira o seu email"
+          />
+          <Input
+            label="Senha"
+            register={register}
+            name="password"
+            type="password"
+            icon
+            error={errors.password?.message}
+            placeholder="Insira sua senha"
+          />
+          <Input
+            label="Confirma Senha"
+            register={register}
+            name="confirm_password"
+            type="password"
+            icon
+            error={errors.confirm_password?.message}
+            placeholder="Confirme a sua senha"
+          />
+          <Buttons type="submit">Cadastrar</Buttons>
+        </form>
+      </FormDivContainer>
+    </>
   );
 };
 

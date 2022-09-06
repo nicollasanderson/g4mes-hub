@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+<h2 align="center"><img src="./src/images/g4HUB.svg" alt="G4Hub" width="150px"></h2>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**<h1 align="center">GamesHub</h1>**
 
-## Available Scripts
+<div>
+    <p>## Nossa aplicação GamesHub foi feita para suprir a necessidade de contato dos gamers.</p>
+    <p>## Permitindo que eles vejam o que cada um joga, interagir nos comentários, espalhar suas notas, opinões, consultar uma lista ENORME de games da atualidade e mais!</p>
+    <p>## Projeto esse com uma grande capacidade de crescimento, além de permitir uma interação divertida em cada uma das páginas próprias do usuário.</p>
+</div>
 
-In the project directory, you can run:
+<div>
+    <p>Dê uma olhada no nosso projeto por si só por aqui => <span><a href="https://capstone-m3-projeto-final.vercel.app/">GamesHub</a></span></p>
+    <p>Documentação G4mes Hub - API => <a href="https://github.com/marcos-vinicius-mafei/G4-Hub-API">G4HUB-API</a></p>
+</div>
 
-### `yarn start`
+<div>
+    <h2>Status do Projeto</h2>
+    =================
+    <h3>GamesHub em construção 🚀🚀🚀</h3>
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<div>
+    <h2>Features</h2>
+    =================
+    <ul>
+        <li>Cadastro de usuário [x]</li>
+        <li>Login do usuário [x]</li>
+        <li>Seção de comentários [x]</li>
+        <li>Perfil próprio de cada usuário [x]</li>
+        <li>Capacidade de alterar informações do usuário [x]</li>
+        <li>Seção de "jogos curtidos" [x]</li>
+        <li>Escrever e apagar seus comentários, como desejar [x]</li>
+        <li>Curtir outros comentários [x]</li>
+        <li>Logout da conta [x]</li>
+    </ul>
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div>
+    <h2>Tecnologias</h2>
+    =================
+    <ul>
+        <li>React</li>
+        <li>Styled-Components</li>
+        <li>Express</li>
+        <li>Node.JS</li>
+    </ul>
+</div>

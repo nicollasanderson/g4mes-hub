@@ -14,7 +14,7 @@ export const Button = styled.button`
   transition: 0.3s;
   z-index: 1;
   font-family: inherit;
-  color: var(--black);
+  color: var(--purple);
 
   ::before {
     content: "";
@@ -36,6 +36,14 @@ export const Button = styled.button`
 
   :hover {
     color: var(--white);
+  }
+
+  @media screen and (min-width: 768px){
+      width: 365.5px;
+      :hover::before {
+        width: 300px;
+        height: 300px;
+      }
   }
 
 `;
